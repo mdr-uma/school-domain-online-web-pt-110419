@@ -9,7 +9,12 @@ class School
   end
 
   def add_student(name, grade)
-    @roaster[grade] ||= []
-    @roaster[grade] << name
+    @roster[grade] ||= []
+    @roster[grade] << name
+  end
+
+  def grade(grade)
+    @roster
+
   end
 end
