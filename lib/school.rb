@@ -1,13 +1,10 @@
 # code here!
 class School
 
-  school.roaster = {}
+  attr_reader :school_name, :roster
 
-  def initialize(name)
-    @name = name
-  end
-
-  def name
-    @name
+  def initialize(school_name)
+    @school_name = school_name
+    @roster = {}
   end
 end
